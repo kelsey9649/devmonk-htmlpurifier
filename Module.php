@@ -24,24 +24,6 @@ class Module implements
     const CONFIG_KEY_CONFIG       = 'config';
     const HTMLPURIFIER_PREFIX     = 'HTMLPURIFIER_PREFIX';
 
-    /**
-     * {@inheritDoc}
-     */
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\ClassMapAutoloader'       => array(
-                __DIR__ . '/autoload_classmap.php',
-            ),
-            AutoloaderFactory::STANDARD_AUTOLOADER => array(
-                StandardAutoloader::LOAD_NS => array(
-                    'HTMLPurifier' => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier',
-                    __NAMESPACE__  => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
-    }
-
     public static function setConstants()
     {
         if (!defined(self::HTMLPURIFIER_PREFIX)) {
