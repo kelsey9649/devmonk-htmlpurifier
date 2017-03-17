@@ -5,6 +5,10 @@ namespace DevmonkHtmlpurifier\Twig;
 use Twig_Extension;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
+/**
+ * Class Extension
+ * @package DevmonkHtmlpurifier\Twig
+ */
 class Extension extends Twig_Extension
 {
     /**
@@ -17,6 +21,11 @@ class Extension extends Twig_Extension
      */
     protected $serviceLocator;
 
+    /**
+     * Extension constructor.
+     * @param \Twig_Environment $env
+     * @param ServiceLocatorInterface $serviceLocator
+     */
     public function __construct(\Twig_Environment $env, ServiceLocatorInterface $serviceLocator)
     {
         $this->env = $env;
@@ -25,11 +34,14 @@ class Extension extends Twig_Extension
         Filter::setServiceLocator($this->serviceLocator);
     }
 
+    /**
+     * @return array
+     */
     public function getFilters()
     {
-        return array(
+        return [
             'purify' => new Filter(),
-        );
+        ];
     }
 
     /**

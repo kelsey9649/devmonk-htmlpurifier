@@ -6,6 +6,10 @@ use DevmonkHtmlpurifier\Module;
 use Twig_Filter_Function;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
+/**
+ * Class Filter
+ * @package DevmonkHtmlpurifier\Twig
+ */
 class Filter extends Twig_Filter_Function
 {
     /** @var ServiceLocatorInterface */
@@ -16,7 +20,12 @@ class Filter extends Twig_Filter_Function
      */
     public function __construct()
     {
-        parent::__construct('DevmonkHtmlpurifier\Twig\Filter::purify', array('is_safe' => array('all')));
+        parent::__construct(
+            'DevmonkHtmlpurifier\Twig\Filter::purify',
+            [
+                'is_safe' => ['all']
+            ]
+        );
     }
 
     /**
