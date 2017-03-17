@@ -1,10 +1,10 @@
 <?php
-return array(
-    \DevmonkHtmlpurifier\Module::CONFIG_KEY_HTMLPURIFIER => array(
-        'config' => array(
+return [
+    \DevmonkHtmlpurifier\Module::CONFIG_KEY_HTMLPURIFIER => [
+        'config' => [
             'Cache.SerializerPath' => __DIR__ . '/../../../../data/cache/htmlpurifier',
-        ),
-    ),
+        ],
+    ],
     'service_manager' => [
         'aliases' => [
             'purifier' => \HTMLPurifier::class,
@@ -19,4 +19,4 @@ return array(
             'purify' => \DevmonkHtmlpurifier\View\Helper\PurifyFactory::class,
         ]
     ]
-);
+];

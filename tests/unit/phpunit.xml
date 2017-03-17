@@ -5,23 +5,8 @@
         </testsuite>
     </testsuites>
     <filter>
-        <!--
-        <blacklist>
-            <directory suffix=".php">/path/to/files</directory>
-            <file>/path/to/file</file>
-            <exclude>
-                <directory suffix=".php">/path/to/files</directory>
-                <file>/path/to/file</file>
-            </exclude>
-        </blacklist>
-        -->
         <whitelist>
             <directory suffix=".php">../../src/DevmonkHtmlpurifier</directory>
-        <!--
-            <exclude>
-                <directory suffix=".phtml">view</directory>
-            </exclude>
-        -->
         </whitelist>
     </filter>
     <logging>
