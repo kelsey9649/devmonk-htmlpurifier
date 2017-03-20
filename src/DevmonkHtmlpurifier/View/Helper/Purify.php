@@ -2,9 +2,12 @@
 
 namespace DevmonkHtmlpurifier\View\Helper;
 
-use Zend\Http\Request;
 use Zend\View\Helper\AbstractHelper;
 
+/**
+ * Class Purify
+ * @package DevmonkHtmlpurifier\View\Helper
+ */
 class Purify extends AbstractHelper
 {
     /** @var \HTMLPurifier */
