@@ -1,12 +1,12 @@
 # DevmonkHtmlpurifier
 
 DevmonkHtmlpurifier is a module that integrates the [HTMLPurifier](http://htmlpurifier.org/) filter library with
-[Zend Framework 2](http://framework.zend.com) and optionally the [Twig](http://twig.sensiolabs.org) templating engine.
+[Zend Framework](http://framework.zend.com) and optionally the [Twig](http://twig.sensiolabs.org) templating engine.
 
 
 ## Installation
 
- 1. Add `"devmonk/htmlpurifier": "dev-master"` to your `composer.json` file and run `php composer.phar update`.
+ 1. Add `"devmonk/htmlpurifier": "1.0.x-dev"` to your `composer.json` file and run `php composer.phar update`.
  2. Add `DevmonkHtmlpurifier` to your `config/application.config.php` file under the `modules` key.
 
 
