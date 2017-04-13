@@ -26,8 +26,6 @@ class FilterTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        Module::setConstants();
-
         $this->sut = new Filter();
     }
 
@@ -49,7 +47,7 @@ class FilterTest extends \PHPUnit_Framework_TestCase
         // ----------------------------------------------------------------
         // setup test parameters
         //
-        $mockServiceLocator = $this->getMock('Zend\ServiceManager\ServiceLocatorInterface');
+        $mockServiceLocator = $this->createMock('Zend\ServiceManager\ServiceLocatorInterface');
         Filter::setServiceLocator($mockServiceLocator);
 
         // ----------------------------------------------------------------
@@ -79,8 +77,8 @@ class FilterTest extends \PHPUnit_Framework_TestCase
         //
         $inputText = 'dirtyHtml';
         $outputText = 'purified-glorified!';
-        $mockServiceLocator = $this->getMock('Zend\ServiceManager\ServiceLocatorInterface');
-        $mockPurifier = $this->getMock('HTMLPurifier');
+        $mockServiceLocator = $this->createMock('Zend\ServiceManager\ServiceLocatorInterface');
+        $mockPurifier = $this->createMock('HTMLPurifier');
         Filter::setServiceLocator($mockServiceLocator);
 
         // ----------------------------------------------------------------

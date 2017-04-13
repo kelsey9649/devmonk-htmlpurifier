@@ -29,10 +29,8 @@ class PurifyTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        Module::setConstants();
-
         /** @var \HTMLPurifier $mockPurifier  */
-        $this->mockPurifier = $this->getMock('\HTMLPurifier');
+        $this->mockPurifier = $this->createMock('\HTMLPurifier');
 
         $this->sut = new Purify($this->mockPurifier);
     }

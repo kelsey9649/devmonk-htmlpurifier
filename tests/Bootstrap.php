@@ -27,6 +27,8 @@ require 'vendor/autoload.php';
  */
 $config =  array(
     'modules' => array(
+        'DevmonkHtmlpurifier',
+        'Zend\Router'
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
