@@ -23,7 +23,7 @@
   },
   "require-dev": {
     "zf-commons/zfc-twig": "^1.0",
-    "zendframework/zendframework": "^3.0"
+    "zendframework/zendframework": ">=2.4"
   },
   "suggest": {
     "zf-commons/zfc-twig": "Provides full twig system for zf2 applications. This package provides a 'purify' filter for twig templates."
