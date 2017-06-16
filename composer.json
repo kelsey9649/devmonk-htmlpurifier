@@ -1,7 +1,7 @@
 {
   "name": "devmonk/htmlpurifier",
   "type": "library",
-  "description": "Zend Framework 2 module that provides complete integration of HTMLPurifier library",
+  "description": "Zend Framework module that provides integration of the HTMLPurifier library",
   "keywords": [
     "zf2",
     "htmlpurifier",
@@ -16,8 +16,8 @@
   "homepage": "https://github.com/kelsey9649/devmonk-htmlpurifier",
   "license": "LGPL v 2.1+",
   "require": {
-    "php": ">=5.3.3",
-    "zendframework/zendframework": "2.*",
+    "php": "^5.6 || ^7.0",
+    "zendframework/zendframework": "^2.0 || ^3.0",
     "ezyang/htmlpurifier": "~4.0"
   },
   "require-dev": {
